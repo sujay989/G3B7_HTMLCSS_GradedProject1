@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-Test</title>
+    <link rel="stylesheet" href="lab.css">
+</head>
+<body>
+    <form action="#">
+        <div class="container">
+            <img src="Lab-Test/lab-test.jpg" alt="">
+            <div class="form-wrapper">
+                <p>1. Your Contact Details</p>
+                <div class="box-details">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="text" placeholder="Patient ID if exists">
+                </div>
+                <div class="box-details">
+                    <input type="text" placeholder="Contact Number" maxlength="10" pattern="[1-9]{1}[0-9]{9}" required>
+                    <input type="email" placeholder="Email id" required>
+                </div>
+                <br>
+                <p>2. Address</p>
+                <div class="box-details">
+                    <input type="text" placeholder="H-No" required>
+                    <input type="text" placeholder="Street" required>
+                </div>
+                <div class="box-details">
+                    <input type="text" placeholder="Area" required>
+                </div>
+                <h5>District</h5>
+                <select name="district" id="district">
+                    <option value="Choose" selected disabled>Choose</option>
+                    <option value="D1">D1</option>
+                    <option value="D2">D2</option>
+                    <option value="D3">D3</option>
+                </select>
+                <p>3. Choose the Test Type<br>
+                    <span>(Check atleast one box without fail)</span>
+                </p>
+                <div class="box-details-1">
+                    <input type="checkbox" value="CBC" id="cbc" class="form-checkbox">
+                    <label for="cbc">CBC</label>
+                    <br>
+                    <input type="checkbox" value="Complete Urine" id="completeurine" class="form-checkbox">                        <label for="completeurine">Complete Urine</label>
+                    <br>
+                    <input type="checkbox" value="Lipid Profile" id="lipidprofile" class="form-checkbox">
+                    <label for="lipidprofile">Lipid Profile</label>
+                    <br>
+                    <input type="checkbox" value="Thyroid Stimulating Hormone(TSH)" id="TSH" class="form-checkbox">
+                    <label for="TSH">Thyroid Stimulating Hormone(TSH)</label>
+                    <br>
+                    <input type="checkbox" value="Glucose Test" id="glucosetest" class="form-checkbox">
+                    <label for="glucosetest">Glucose Test</label>
+                </div>
+                <p>4. Do you want a hard copy of the report also?</p>
+                <div class="box-details-2">
+                    <input type="radio" value="Yes" id="yes" name="hardcopy" class="form-radio">
+                    <label for="yes">Yes</label>
+                    <input type="radio" value="No" id="no" name="hardcopy" class="form-radio">
+                    <label for="no">No</label>
+                </div>
+                <p>5. Select Your Comfortable Date and Time</p>
+                <div class="box-details">
+                    <input type="date" id="date" placeholder="yyyy-MM-dd" required>
+                    <input type="time" id="time" placeholder="HH:mm" required>
+                    <br><br>
+                </div>
+            </div>
+        </div>
+        <button type="reset" id="reset" value="Reset">Reset</button>
+        <button type="submit" id="submit" value="Submit">Submit</button>
+    </form>
+</body>
+</html>

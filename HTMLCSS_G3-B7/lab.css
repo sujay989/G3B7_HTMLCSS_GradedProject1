@@ -1,0 +1,221 @@
+body{
+    margin: 0;
+    overflow: hidden;
+}
+form{
+    width: 100%;
+    height: 80%;
+}
+.container{
+    width: 60%;
+    height: 70%;
+    position: absolute;
+    left: 23%;
+    top: 15%;
+    overflow-y: scroll;
+    box-shadow: 5px 15px 15px 9px #575656;
+}
+img{
+    width: 31%;
+    height: 70%;
+    position: fixed;
+    left: 51%;
+}
+p{
+    font-weight: bold;
+    font-size: large;
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 40%;
+}
+h5{
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.form-wrapper{
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    margin: 0;
+    position: absolute;
+    top: 0;
+}
+input{
+    border: none;
+    border-bottom: 1px solid #575656;
+    padding: 18px;
+    width: 15%;
+    margin-left: 20px;
+    margin-top: 5px;
+    height: 2%;
+}
+input:hover{
+    transform: scale(1.1);
+}
+select{
+    border-radius: 3px;
+    border: 2px solid #adabab;
+    width: 20%;
+    margin-left: 20px;
+    padding: 15px;
+}
+select:hover{
+    transform: scale(1.1);
+}
+span {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: small;
+    color: red;
+}
+.box-details-1 input{
+    margin-left: 20px; 
+}
+.form-checkbox, label{
+    padding-left: 0; 
+    width: 2%;
+    font-size: smaller;
+}
+.form-radio{
+    margin-left: 20px; 
+    width: 2%;
+    padding-left: 0; 
+}
+#date, #time{
+    border: 2px solid #adabab;
+    border-radius: 3px;
+    padding: 15px;
+} 
+button{
+    display: inline;
+    position: absolute;
+    top: 90%;
+    background-color: rgb(168, 91, 240);
+    color: azure;
+    align-items: center;
+    border-radius: 3px;
+    padding: 3px 6px;
+    font-size: large;
+}
+button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#reset{
+    left: 35%;
+}
+#submit{
+    left: 43%;
+}
+@media only screen and (max-width: 1180px) {
+    p, h5{
+        font-size: normal;
+    }
+    input, select, label{
+        padding: 10px;
+    }
+    img{
+        width: 30%;
+        left: 52%;
+    }
+    #reset{
+        left: 33%;
+    }
+}
+@media only screen and (max-width: 1080px) {
+    p, h5{
+        font-size: normal;
+    }
+    input, select, label{
+        padding: 10px;
+    }
+    img{
+        width: 30%;
+        left: 51.8%;
+    }
+    #date, #time{
+        width: 10%;
+    }
+    #reset{
+        left: 33%;
+    }
+}
+@media only screen and (max-width: 940px) {
+    span{
+        font-size: 10px;
+        margin-left:18px;
+    }
+    label{
+        width: 1%;
+        padding: 2px;
+    }
+    #reset{
+        left: 32%;
+    }
+   
+}
+@media only screen and (max-width: 800px) {
+    p, h5{
+        font-size: small;
+    }
+    span{
+        font-size: 8px;
+        margin-left: 13px;
+    }
+    input, select{
+        width: 10%;
+        height: 1%; 
+        padding: 8px;
+        font-size: small;
+    }
+    label{
+        width: 2%;
+        padding: 2px;
+        font-size: x-small;
+    }
+    img{
+        width: 29%;
+        left: 52%;
+    }
+    #date, #time{
+        width: 7%;
+    }
+    button{
+        font-size: x-small;
+    }
+    #reset{
+        left: 33%;
+    }
+}
+@media only screen and (max-width: 530px) {
+    .container{
+        box-shadow: 3px 8px 5px 5px #575656;
+    }
+    p, h5{
+        font-size: x-small;
+    }
+    span{
+        font-size: 6px;
+        margin-left: 13px;
+    }
+    input, select{
+        font-size: x-small;
+    }
+    label{
+        font-size: xx-small;
+    }
+    img{
+        width: 28%;
+        left: 52.5%;
+    }
+    #date, #time{
+        width: 4%;
+        font-size: xx-small;
+    }
+    button{
+        font-size: xx-small;
+    }
+    #reset{
+        left: 30%;
+    }
+}
